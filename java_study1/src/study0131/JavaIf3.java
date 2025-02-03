@@ -18,13 +18,13 @@ public class JavaIf3 {
 		// 30, 32, 38, 39 ->  몫이 3이다.
 		
 		Scanner sc = new Scanner(System.in);
-		int default_time=30; // 기본시간
-		int cost=1000; // 기본요금
-		int pTime=0; // 주차 시간
-		int tenM= 100; // 10분에 100원 추가요금
-		
-		System.out.print("주차 시간(분) : ");
-		pTime=sc.nextInt();
+//		int default_time=30; // 기본시간
+//		int cost=1000; // 기본요금
+//		int pTime=0; // 주차 시간
+//		int tenM= 100; // 10분에 100원 추가요금
+//		
+//		System.out.print("주차 시간(분) : ");
+//		pTime=sc.nextInt();
 		
 //		if(0<pTime && pTime<=39) {// 기본요금 1000원 
 //			
@@ -32,12 +32,38 @@ public class JavaIf3 {
 //			pTime= pTime-default_time;
 //			cost = (pTime/10)*tenM+cost;
 //		}
-		if(0<pTime && pTime<=39) {
-			pTime=30;
+//		if(0<pTime && pTime<=39) {
+//			pTime=30;
+//		}
+//		pTime= pTime-default_time;
+//		cost = (pTime/10)*tenM+cost;
+//		System.out.println("주차 요금 : "+cost);
+		
+		
+		int phour, pmin; // 주차 시간, 분
+		int cost = 1000;
+		int totalTime=0; // 총 주차 시간(분)- 기본시간제외한 나머지
+		
+		System.out.print("주차 시간( 시간, 분) : ");
+		phour = sc.nextInt(); // 주차 몇시간 입력
+		pmin = sc.nextInt(); // 주차 몇 분 입력
+		
+		totalTime = phour*60 + pmin;
+		if(phour >= 8) { // 8시간 이상 주차시
+			cost = 10000;
+			totalTime=0; // 8시간 이상 이라는 시간에 대해서 이미 요금계산완료
+		}else if(phour >= 4) {//4시간 이상 주차시
+			cost = 2500;
+			totalTime -= 240; // 4시간의 기본 시간 빼기
+		}else if(phour >= 2) {//2시간 이상 주차시
+			cost=1700;
+			totalTime -= 120; 
+		}else { // 2시간 미만 주차시
+			totalTime = totalTime<30 ? 0 : totalTime-30;
 		}
-		pTime= pTime-default_time;
-		cost = (pTime/10)*tenM+cost;
-		System.out.println("주차 요금 : "+cost);
+		
+		int price = cost + (totalTime/10 * 100);
+		System.out.println("주차 요금 : "+ price+"원");
 	}
 
 }
