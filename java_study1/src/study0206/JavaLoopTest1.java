@@ -23,6 +23,22 @@ public class JavaLoopTest1 {
 		 	컴퓨터 와 가위 바위 보 게임 하기
 		 	내가 10번을 이길때 까지 계속 게임하기 
 		 	10번 이기면  그동안 몇번 패배 하고 몇번 비겼는지 출력
+		 	int win=0, lose=0, draw=0;
+		 	while(true){
+		 		System.out.print("1.가위  2.바위  3.보  : ");
+				int me = sc.nextInt(); // 키보드를 통해 입력
+				int com = (int)(Math.random() * 3 + 1);
+				if(me == com ) { // 서로 같은 값이면 비김
+					System.out.println("비김");draw++;
+				}else if( (me==1 && com==3) || (me==2 && com==1) 
+						|| (me==3 && com==2)) {
+					System.out.println("이김"); win++;
+				}else {
+					System.out.println("패배..."); lose++;
+				}
+				if(win==10) break;
+		 	}
+		 	System.out.println("패배 : "+lose + "  비김 : "+ draw);
 		
 		 문제 3
 		    컴퓨터 와 주사위 게임을 한다.
