@@ -160,6 +160,8 @@ public class JavaArray2 {
 //			System.out.println( num[i] );
 //		}
 		
+		int[][] a = new int[3][4];
+		
 		
 	}
 
