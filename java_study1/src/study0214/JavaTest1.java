@@ -1,5 +1,6 @@
 package study0214;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class JavaTest1 {
@@ -131,7 +132,22 @@ public class JavaTest1 {
 		
 		int[] harvest = {9, 10, 11, 8, 7, 5};
 		
+		int total=0;
+		for(int am : harvest) {
+			total = total+am;
+		}
+		System.out.println("전체 수확량 : " +total);
 		
+		float avg = total/(float)harvest.length;
+		System.out.println("평균 수확량 : " + avg );
+		
+		Arrays.sort(harvest); // 정렬 오름차순
+		
+		System.out.println("가장 많은 수확량 : " 
+		                + harvest[harvest.length-1]);
+		
+		
+		//System.out.println( Arrays.toString(harvest));
 	}
 
 }
