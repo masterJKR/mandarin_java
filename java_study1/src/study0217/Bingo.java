@@ -69,7 +69,7 @@ Scanner scan = new Scanner(System.in);
 				세로 =0;
 			}
 			
-			if( bingo== 5) {
+			if( bingo == 5) {
 				System.out.println("5줄 빙고 끝!!!");
 				break;
 			}
