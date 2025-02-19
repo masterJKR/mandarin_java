@@ -32,10 +32,43 @@ public class ClassArray {
 //			System.out.println( members[i].age );
 //		}
 //	int[] a = new int[] {1,2,3,4,5};
+
+//		Movie movie = new Movie();
+//		movie.title="베테랑2";
+//		movie.genre="액션";
+//		movie.cnt=4000;
+//		movie.year=2024;
+//		
+//		System.out.println("제목 : " + movie.title +
+//				" 장르 : " +movie.genre +" 관객수 : "+movie.cnt +
+//				"  개봉년도 : "+movie.year);
+//		
+//		Member info = new Member();
+//		System.out.println(info);
+//		System.out.println( info.name );
+//		
+//		Member m1 = new Member();
+//		System.out.println( m1.name );
 		
-		Member info = new Member();
+		Member info = new Member(20,"군인","김유신");
 		
+		System.out.println( info.job );
 		
 	}
 
 }
+
+/*
+ 	 영화제목 ,  장르,  관객수 , 개봉년도 
+ 	 
+ 	 위 항목의 데이터를 저장할수 있는 클래스 정의 
+ 	 영화 한편에 대한 데이터 입력하고 출력 까지
+ */
+
+
+
+
+
+
+
+
