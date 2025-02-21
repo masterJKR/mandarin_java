@@ -13,6 +13,9 @@ public class JavaMethod2 {
 		
 		Member user2= new Member("gold","5432",1002);
 		
+		Member user3= new Member("gold","5432",1002);
+		System.out.println( user3 );
+		
 		user2.output();
 		
 		String word = "이렇게 한다";
