@@ -23,6 +23,7 @@ public class JavaMethod3 {
 		
 		findSubject( course );
 		
+		Courses c = new Courses();
 		
 		
 		// 학점이 2 학점인 과목을 찾아라!!! - 메서드
