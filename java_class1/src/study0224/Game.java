@@ -2,9 +2,9 @@ package study0224;
 
 public class Game {
 	String title;
-	int cnt;
+	private int cnt;
 	
-	Game(){}
+	public Game(){}
 	Game(String title, int cnt){
 		this.title=title;
 		this.cnt=cnt;
