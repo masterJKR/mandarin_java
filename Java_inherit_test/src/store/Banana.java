@@ -1,6 +1,6 @@
 package store;
 
-public class Banana extends Fruit {
+public class Banana extends Fruit{
 	
 	public Banana(int cost, int capacity) {
 		super(cost,capacity);
