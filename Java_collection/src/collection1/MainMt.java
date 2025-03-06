@@ -35,6 +35,26 @@ public class MainMt {
 		list.remove("포카칩"); //삭제 할 데이터 입력하여 삭제
 		System.out.println(  list  );
 		
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(  list.get(i)  );
+		}
+		
+		for( Object o : list ) {
+			System.out.println( o );
+		}
+		
+		list.add(1 , "내가원하는곳");
+		
+		System.out.println(  list );
+		
+		System.out.println( list.contains("장미란") );
+		
+		list.clear(); // 배열모두 삭제
+		
+		System.out.println( list );
+		
+		// int[] a=new int[3];
+		
 	}
 
 }
