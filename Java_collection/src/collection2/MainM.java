@@ -45,6 +45,11 @@ public class MainM {
 		System.out.println( names );
 		
 		// 최예너 -> 최예나 변경
+		for() {
+			if() {
+				변경
+			}
+		}
 		names.set( names.indexOf("최예너") , "최예나") ;//  변경할 인덱스 , 변경 데이터
 
 		System.out.println(  names );
