@@ -62,7 +62,7 @@ public class MyMain {
 //		// 서비스 클래스들을 통해 로그인과 학교 찾기를 할것이다.
 //		MemberService memberService = new MemberService();
 //		SchoolService schoolService = new SchoolService();
-//		
+
 //		// 메뉴
 //		while(true) {
 //			switch( menu() ) {
