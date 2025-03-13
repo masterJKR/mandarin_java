@@ -10,6 +10,7 @@ import lombok.Setter;
 public class Dino {
 	private String name;
 	private int time;
+	
 }
 
 
