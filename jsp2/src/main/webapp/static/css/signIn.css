@@ -47,4 +47,24 @@
 }
 
 
+#forgetAndJoin{
+	padding:15px 0;
+	display:flex;
+	justify-content:space-between;
+	width:400px;
+	margin:0 auto;
+}
+#forgetAndJoin + p{
+	margin-top:30px;
+	font-style:italic;
+	font-weight:800;
+}
+
+
+
+
+
+
+
+
 
