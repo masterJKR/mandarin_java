@@ -12,7 +12,7 @@ public class MemberService {
 		 
 		 MemberDao dao = new MemberDao();
 		 
-		 if(    ) {
+		 if(  dao.loginCheck(email, pass)   ) {
 			 request.getSession().setAttribute("user", email);
 		 }
 		 
